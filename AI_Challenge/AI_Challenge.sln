@@ -13,29 +13,33 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HCMAI22_MiniBatch1(giainen)
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_54624"
-		Debug.AspNetCompiler.PhysicalPath = "C:\Users\LE NGUYEN\OneDrive\HCMAI22_MiniBatch1(giainen)\"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\OneDrive\HCMAI22_MiniBatch1(giainen)\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54624\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_54624"
-		Release.AspNetCompiler.PhysicalPath = "C:\Users\LE NGUYEN\OneDrive\HCMAI22_MiniBatch1(giainen)\"
+		Release.AspNetCompiler.PhysicalPath = "..\..\OneDrive\HCMAI22_MiniBatch1(giainen)\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54624\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "54624"
+		SlnRelativePath = "..\..\OneDrive\HCMAI22_MiniBatch1(giainen)\"
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7AFB8541-876C-4D4C-BCF1-43AA469DD5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7AFB8541-876C-4D4C-BCF1-43AA469DD5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFB8541-876C-4D4C-BCF1-43AA469DD5B7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFB8541-876C-4D4C-BCF1-43AA469DD5B7}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
