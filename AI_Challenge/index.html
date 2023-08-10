@@ -5,16 +5,69 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Challenge</title>
-    <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="main.css" />-->
 </head>
 <body>
     <div id="main">
         <div id="header">
-            <div class="left-content">Nhập từ khóa</div>
-            <div class="right-content">
-                <input type="text" placeholder="Tìm kiếm...">
-                <button>Tìm kiếm</button>
-            </div>
+            <!-- <div class="left-content">Nhập từ khóa</div>
+     <div class="right-content">
+         <input type="text" placeholder="Tìm kiếm...">
+         <button>Tìm kiếm</button>
+     </div>
+     <div id="result"></div>-->
+            <h1>Frame Search</h1>
+            <input id="text" type="text" value="" style="width: 20%" />
+            <button onclick="searchPokemon()">Find Frame By Text</button>
+            <p>Results</p>
+            <div id="result"></div>
+
+            <!-- Thêm phần để tải lên tập tin -->
+            <input type="file" id="fileInput" />
+            <button onclick="uploadFile()">Upload File</button>
+            <script language="javascript">
+                // JavaScript function to call the API and display the result
+                function searchPokemon() {
+                    // Get the input value
+                    var name = document.getElementById("text").value;
+                    // Check if the input is not empty
+                    if (name) {
+                        // Construct the API url with the input value
+                        var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + name;
+                        // Use fetch to make a GET request to the API
+                        fetch(apiUrl)
+                            .then((response) => {
+                                // Check if the response is ok (status code 200)
+                                if (!response.ok) {
+                                    throw new Error("Network response was not ok");
+                                }
+                                // Parse the response body as JSON
+                                return response.json();
+                            })
+                            .then((data) => {
+                                // Use the JSON data to display the Pokemon information
+                                var result = "<h2>" + data.name + "</h2>";
+                                result +=
+                                    "<img src='" + data.sprites.front_default + "' alt='Pokemon Image'>";
+                                result += "<p>Height: " + data.height + "</p>";
+                                result += "<p>Weight: " + data.weight + "</p>";
+                                result += "<p>Abilities: ";
+                                for (var i = 0; i < data.abilities.length; i++) {
+                                    result += data.abilities[i].ability.name + ", ";
+                                }
+                                result = result.slice(0, -2); // Remove the last comma and space
+                                result += "</p>";
+                                document.getElementById("result").innerHTML = result;
+                            })
+                            .catch((error) => {
+                                console.error("Error fetching data:", error);
+                            });
+                    } else {
+                        // Handle case when input is empty
+                        console.log("Hãy nhập text_query");
+                    }
+                }
+            </script>
         </div>
 
         <div id="slider">
