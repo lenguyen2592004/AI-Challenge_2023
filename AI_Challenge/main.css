@@ -1,0 +1,76 @@
+﻿/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-content {
+    margin-right: 20px;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width:1800%;
+    padding-right:50px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    float: right;
+    width: 100%;
+    margin-right:10px;
+}
+//
+html {
+}
+
+//
+header {
+}
+
+//
+nav {
+}
+
+//
+slider {
+}
+
+//
+content {
+}
+
+//
+sidebar {
+}
+
+//
+footer {
+}
